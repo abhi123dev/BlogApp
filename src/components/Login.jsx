@@ -36,9 +36,12 @@ function Login() {
                 // Redirect to home page
                 navigate("/")
             }
+            else {
+                setError("Failed to fetch user data.");
+            }
         } catch (error) {
             // If error occurs during login, show error message
-            setError(error.message)
+            setError(error.message|| "Login Failed");
         }
     }
 

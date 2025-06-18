@@ -5,7 +5,7 @@ import { useNavigate,  useParams } from 'react-router-dom';
 
 function EditPost() {
     const [post, setPosts] = useState(null)
-    const {slug} = useParams() //The useParams hook in React Router DOM is a fundamental tool for accessing dynamic segments of a URL within a React component. It allows developers to extract parameters from the current route and utilize them within the component's logic or for rendering dynamic content.
+    const {slug} = useParams()
     const navigate = useNavigate()
 
     useEffect(() => {
